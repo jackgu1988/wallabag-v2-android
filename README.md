@@ -1,6 +1,8 @@
 This is this a repository for people willing to work on an android app that will target Wallabag v2.
 
-It is not in any way currently usable, and will never be usable for Wallabag v1. [Google Play is the place to go](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) if you search this.
+It is not in any way currently usable, and will never be usable for Wallabag v1. 
+
+Thus, the app will not replace the ["InThePoche" android app](https://play.google.com/store/apps/details?id=fr.gaulupeau.apps.InThePoche) but exists side by side, maybe under a name like "Wallabag (BETA").
 
 This application is released under GPL v3
 
