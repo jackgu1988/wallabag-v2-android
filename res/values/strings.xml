@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">In the poche !</string>
-    <string name="app_name">In the poche</string>
-    <string name="label_name">Add in the poche</string>
+
+    <string name="hello">Wallabag!</string>
+    <string name="app_name">Wallabag</string>
+    <string name="label_name">Add Wallabag</string>
     <string name="author">By GAULUPEAU Jonathan</string>
-    <string name="instructions">To save a web page to poche, open the page in a browser then tap <i>Share</i> and tap on <i>In the poche</i>. \nYou could then see your Poche login page. \nAnd it\'s done ! \nMore infos about poche at http://www.inthepoche.com</string>
+    <string name="instructions">To save a web page to wallabag, open the page in a browser then tap <i>Share</i> and tap on <i>Wallabag</i>. \nYou could then see your Wallabag login page. \nAnd it\'s done ! \nMore info about Wallabag at https://www.wallabag.org/</string>
     <string name="btnDone">Save</string>
     <string name="which_browser">Which browser would you like to use?</string>
     <string name="authorSite">http://cv.gaulupeau.fr</string>
-    <string name="url_label"><b><u>Your poche URL :</u></b></string>
-    <string name="url_help">Examples:\n<i>http://poche.example.fr</i>\n<i>http://www.example.fr/poche</i></string>
+    <string name="url_label"><b><u>Your Wallabag URL:</u></b></string>
+    <string name="url_help">Example:\n<i>http://wallabag.example.com</i></string>
     <string name="btnGetPost">Save the post</string>
+    <string name="credits">Credits</string>
+    <string name="instructions_title">Instructions</string>
+    <string name="ok">OK</string>
+
 </resources>
