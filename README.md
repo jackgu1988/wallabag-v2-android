@@ -36,3 +36,14 @@ Integration with Google Push Messaging. Polling for new articles is a no-go.
 
 Integration within android. We should be able to "Share" a link in Wallabag from anywhere in Android.
 
+# UI Design
+
+## User Interface
+
+The app should contain a List view as its main Activity. In that view, all the saved articles should appear.
+
+If the user has not set a Wallabag server, it should be asked on startup. The server settings should be placed in the settings menu.
+
+A side drawer should also be available. In it, the most recent and/or the most popular tags should be easily accessible. A search option and a link to the settings menu should also be placed there.
+
+Finally, when the user selects an article, it should open in a separate Activity that does not contain a sidebar and focuses on presenting as little irrelevant info (meaning other than the article) to the user as possible.
