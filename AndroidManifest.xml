@@ -3,14 +3,14 @@
       package="fr.gaulupeau.apps.InThePoche"
       android:versionCode="3"
       android:versionName="1.0.2">
-    <uses-sdk android:minSdkVersion="4"
-              android:targetSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="16"
+              android:targetSdkVersion="16" />
     <uses-permission android:name="android.permission.INTERNET"/>
 
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name="fr.gaulupeau.apps.Poche.Poche"
-                  android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+                  android:label="@string/app_name" android:theme="@android:style/Theme.Holo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -21,7 +21,7 @@
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
-        <activity android:name="fr.gaulupeau.apps.Poche.ReadArticle" android:label="@string/app_name" android:theme="@android:style/Theme.Light"></activity>
+        <activity android:name="fr.gaulupeau.apps.Poche.ReadArticle" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light"></activity>
 
     </application>
 </manifest>

@@ -6,33 +6,10 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="30sp"
-        android:paddingRight="30sp" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" >
-
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:scaleType="center"
-                android:src="@drawable/icon" />
-
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="3"
-                android:text="@string/hello"
-                android:textSize="25sp" />
-
-        </LinearLayout>
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp" >
 
         <TextView
             android:id="@+id/pageUrl_label"
@@ -42,6 +19,20 @@
             android:text="@string/url_label"
             android:textSize="20sp" />
 
+        <EditText
+            android:id="@+id/pocheUrl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textUri"
+            android:linksClickable="false"
+            android:maxLines="1"
+            android:scrollHorizontally="false" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
         <TextView
             android:id="@+id/txtTitre"
             android:layout_width="wrap_content"
@@ -49,54 +40,40 @@
             android:layout_weight="1"
             android:text="@string/url_help" />
 
-        <EditText
-            android:id="@+id/pocheUrl"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textFilter"
-            android:linksClickable="false"
-            android:maxLines="1"
-            android:scrollHorizontally="false" >
-
-            <requestFocus android:layout_width="wrap_content" />
-
-        </EditText>
-
-        <TextView
-            android:id="@+id/instructions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/toppadding"
-            android:layout_weight="1"
-            android:paddingTop="5sp"
-            android:text="@string/instructions"
-            android:autoLink="web"
-            android:textSize="22sp" >
-        </TextView>
-
-        <Button
-            android:id="@+id/btnDone"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/btnDone" />
-
-        <Button
-            android:id="@+id/btnGetPost"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/btnGetPost" />
-
         <TextView
             android:id="@+id/txtContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2" >
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnDone" />
+
+            <Button
+                android:id="@+id/btnGetPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="right|top"
+                android:layout_row="0"
+                android:text="@string/btnGetPost" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/txtContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
 
         <TextView
             android:id="@+id/author"
@@ -104,8 +81,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:text="@string/author"
-            android:textSize="10sp" />
-
+            android:textSize="12sp" />
     </LinearLayout>
 
 </ScrollView>
