@@ -1,14 +1,15 @@
 /**
- * Android to Poche
+ * Android to Wallabag
  * A simple app to make the full save bookmark to Poche
  * web page available via the Share menu on Android tablets
  * @author GAULUPEAU Jonathan
  * August 2013
  */
 
-package fr.gaulupeau.apps.Poche;
+package fr.gaulupeau.apps.wallabag;
 
-import fr.gaulupeau.apps.InThePoche.R;
+import fr.gaulupeau.apps.Wallabag.R;
+
 import java.io.UnsupportedEncodingException;
 
 import android.annotation.TargetApi;
@@ -30,13 +31,13 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import static fr.gaulupeau.apps.Poche.Helpers.PREFS_NAME;
+import static fr.gaulupeau.apps.wallabag.Helpers.PREFS_NAME;
 
 /**
  * Main activity class
  */
 @TargetApi(Build.VERSION_CODES.FROYO)
-public class Poche extends Activity {
+public class Wallabag extends Activity {
 	TextView authorSite;
 
 	Button btnDone;
@@ -104,7 +105,7 @@ public class Poche extends Activity {
 					editor.putString("pocheUrl", editPocheUrl.getText()
 							.toString());
 					editor.commit();
-					Poche.this.finish();
+					Wallabag.this.finish();
 				}
 			});
 

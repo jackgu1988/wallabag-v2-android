@@ -1,4 +1,4 @@
-package fr.gaulupeau.apps.Poche;
+package fr.gaulupeau.apps.wallabag;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,26 +11,22 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 public class Helpers {
-	
-	public static final String PREFS_NAME = "InThePoche";
-    public final static String zeroUpdate = "2011-01-01 00:00:00";
 
-	public static String InputStreamtoString(InputStream is)
-	{
-		String s = "",line="";
+	public static final String PREFS_NAME = "InThePoche";
+	public final static String zeroUpdate = "2011-01-01 00:00:00";
+
+	public static String InputStreamtoString(InputStream is) {
+		String s = "", line = "";
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-		try{
-			for(; ; rd.readLine())
-			{
-				if((line = rd.readLine())!=null)
-				{
-					s +=line;
-				}else
-				{
+		try {
+			for (;; rd.readLine()) {
+				if ((line = rd.readLine()) != null) {
+					s += line;
+				} else {
 					break;
 				}
 			}
-		}catch (IOException e) {
+		} catch (IOException e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
